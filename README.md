@@ -1,21 +1,43 @@
-<<<<<<< HEAD
-=======
 📝 Express Form Validation App (CRUD Without Database)
 
-This is a simple Express.js form validation project that performs full CRUD operations using local JSON storage instead of a database.
-It also tracks the currently logged-in user details in a separate JSON file for developer reference.
+This project is a beginner-friendly Express.js backend application that demonstrates how to implement form validation and complete CRUD operations without using any database.
+Instead of a traditional DB, all user data is stored and managed using local JSON files, making it easier to understand how data persistence works internally.
 
-This project is built to understand how backend validation, authentication logic, and data handling work without using MongoDB or SQL.
+Additionally, the application keeps track of the currently logged-in user in a separate JSON file, which helps developers monitor authentication flow during testing and debugging.
 
-*** Tech Stack
-	•	Node.js
-	•	Express.js
-	•	HTML / CSS (Frontend)
-	•	JSON Files for Data Storage
+This project is mainly built for learning purposes to strengthen concepts like:
+	•	Request handling in Express
+	•	Server-side validation
+	•	File system based data storage
+	•	Authentication flow without external services
 
-***Data Storage Structure
-	•	users.json → Stores all registered users and CRUD data
-	•	loggedInUser.json → Stores details of the currently logged-in user (for developer tracking)
+⸻
 
+🛠 Tech Stack
+	•	Node.js — JavaScript runtime environment
+	•	Express.js — Backend web framework
+	•	HTML & CSS — Frontend form UI
+	•	JSON Files — Used as local storage (via Node.js File System)
 
->>>>>>> fab46b3d9435e3b2306fc2d806d335503178e93e
+⸻
+
+📁 Data Storage Structure
+
+All application data is stored using JSON files instead of a database:
+	•	users.json
+Stores all registered users and supports Create, Read, Update, and Delete operations.
+	•	loggedInUser.json
+Stores details of the currently authenticated user for developer-side verification and debugging.
+
+⚠️ Note: This storage method is only for learning and testing purposes and is not recommended for real-world applications.
+
+⸻
+
+🎯 Project Objective
+
+The goal of this project is to help students and beginners:
+	•	Understand backend validation logic
+	•	Practice CRUD operations without DB complexity
+	•	Learn Express routing and middleware concepts
+	•	Simulate authentication behavior
+	•	Build confidence before moving to MongoDB or SQL
